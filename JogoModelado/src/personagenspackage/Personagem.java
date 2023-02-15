@@ -7,13 +7,11 @@ public abstract class Personagem {
 
     public abstract void desenhar();
 
-    public void arma()
-    {
+    public void arma() {
         arma.usarArma();
     }
 
-    public void setArma(Armaif arma)
-    {
+    public void setArma(Armaif arma) {
         this.arma = arma;
     }
 }
