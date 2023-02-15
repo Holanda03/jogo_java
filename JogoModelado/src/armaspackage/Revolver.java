@@ -1,21 +1,20 @@
 package armaspackage;
 
-import armaspackage.interfaces.iArmasDeFogo;
 
-public class Revolver extends Armaif implements iArmasDeFogo {
-    private int qtdBalas = 5;
+public class Revolver extends ArmaDeFogo{
+    private int qtdMunicao = 5;
 
     public int getQtdBalas() {
-        return qtdBalas;
+        return qtdMunicao;
     }
 
     @Override
     public void usarArma()
     {
-        if(qtdBalas > 0)
+        if(qtdMunicao > 0)
         {
             System.out.println("Utilizando um Revólver.");
-            qtdBalas = qtdBalas - 1;
+            qtdMunicao = qtdMunicao - 1;
         } else
         {
             System.out.println("Você está sem balas. Recarregue imediatamente usando recarregar()");
@@ -25,7 +24,7 @@ public class Revolver extends Armaif implements iArmasDeFogo {
     @Override
     public void recarregar()
     {
-        qtdBalas = 5;
+        qtdMunicao = 5;
         System.out.println("Revólver recarregado.");
     }
 }
