@@ -1,21 +1,19 @@
 package armaspackage;
 
-import armaspackage.interfaces.iForcaBruta;
-
-public class Mordida extends Armaif implements iForcaBruta {
-    private int qtdMordidas = 3;
+public class Mordida extends ForcaBruta {
+    private int qtdGolpes = 3;
 
     public int getQtdMordidas() {
-        return qtdMordidas;
+        return qtdGolpes;
     }
 
     @Override
     public void usarArma()
     {
-        if(qtdMordidas > 0)
+        if(qtdGolpes > 0)
         {
             System.out.println("Utilizando a Mordida - Dragão Alado.");
-            qtdMordidas = qtdMordidas - 1;
+            qtdGolpes = qtdGolpes - 1;
         } else
         {
             System.out.println("Você está cansado para morder alguém. Descanse utilizando descansar()");
@@ -25,7 +23,7 @@ public class Mordida extends Armaif implements iForcaBruta {
     @Override
     public void descansar()
     {
-        qtdMordidas = 3;
+        qtdGolpes = 3;
         System.out.println("Personagem descansado. Pode voltar a batalha agora.");
     }
 }

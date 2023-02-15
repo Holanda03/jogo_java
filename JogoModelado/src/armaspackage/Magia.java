@@ -1,8 +1,6 @@
 package armaspackage;
 
-import armaspackage.interfaces.iMana;
-
-public class Magia extends Armaif implements iMana {
+public class Magia extends Poderes{
     private int qtdMana = 25;
 
     public int getQtdMana() {
@@ -22,7 +20,7 @@ public class Magia extends Armaif implements iMana {
     }
 
     @Override
-    public void regenerar()
+    public void recuperarPoder()
     {
         qtdMana = 25;
         System.out.println("Mana restaurada.");
