@@ -36,6 +36,7 @@ public class Main {
         //dragao.arma();
         //dragao.arma();
         //dragao.arma();
+        soldado.arma(soldado, general);
         System.out.println(mordida.getQtdMordidas());
         mordida.descansar();
         //general.arma();

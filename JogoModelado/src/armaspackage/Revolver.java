@@ -15,7 +15,7 @@ public class Revolver extends ArmaDeFogo{
     }
 
     @Override
-    public void usarArma(Personagem personagemAlvo)
+    public void usarArma(Personagem personagemPredador, Personagem personagemPresa)
     {
         if(qtdMunicao > 0)
         {

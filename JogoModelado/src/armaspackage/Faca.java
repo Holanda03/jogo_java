@@ -16,7 +16,7 @@ public class Faca extends ArmaBranca{
     }
 
     @Override
-    public void usarArma(Personagem personagemAlvo)
+    public void usarArma(Personagem personagemPredador, Personagem personagemPresa)
     {
         if(qtdGolpes > 0)
         {

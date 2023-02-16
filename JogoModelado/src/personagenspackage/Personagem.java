@@ -6,7 +6,7 @@ public abstract class Personagem {
     private String nome;
     private String tipoPersonagem;
     private Armaif arma;
-    private int vida;
+    protected int vida;
 
     public void setArma(Armaif arma) {
         this.arma = arma;
@@ -14,6 +14,10 @@ public abstract class Personagem {
 
     public int getVida() {
         return vida;
+    }
+
+    public void setVida(int vida) {
+        this.vida = vida;
     }
 
     public String getNome() {
@@ -26,7 +30,7 @@ public abstract class Personagem {
 
     public abstract void desenhar();
 
-    public void arma(Personagem personagemAlvo) {
-        arma.usarArma(personagemAlvo);
+    public void arma(Personagem personagemPredador, Personagem personagemPresa) {
+        arma.usarArma(personagemPredador, personagemPresa);
     }
 }
