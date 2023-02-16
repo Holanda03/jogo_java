@@ -1,5 +1,9 @@
 package armaspackage;
 
+import personagenspackage.Personagem;
+
 public abstract class Armaif {
-    public abstract void usarArma();
+    private int dano;
+
+    public abstract void usarArma(Personagem personagemAlvo);
 }

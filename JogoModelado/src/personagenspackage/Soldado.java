@@ -1,6 +1,12 @@
 package personagenspackage;
 
 public class Soldado extends PersoTerrestres {
+    private int vida = 25;
+
+    @Override
+    public int getVida() {
+        return vida;
+    }
 
     @Override
     public void desenhar() {

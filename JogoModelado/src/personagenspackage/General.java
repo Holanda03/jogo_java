@@ -1,6 +1,12 @@
 package personagenspackage;
 
 public class General extends PersoTerrestres {
+    private int vida = 35;
+
+    @Override
+    public int getVida() {
+        return vida;
+    }
 
     @Override
     public void desenhar() {

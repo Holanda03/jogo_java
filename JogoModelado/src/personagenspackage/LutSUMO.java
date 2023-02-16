@@ -1,7 +1,12 @@
 package personagenspackage;
 
-
 public class LutSUMO extends PersoTerrestres {
+    private int vida = 45;
+
+    @Override
+    public int getVida() {
+        return vida;
+    }
 
     @Override
     public void desenhar() {

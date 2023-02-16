@@ -1,14 +1,21 @@
 package armaspackage;
 
+import personagenspackage.Personagem;
+
 public class Mordida extends ForcaBruta {
     private int qtdGolpes = 3;
+    private int dano = 10;
 
     public int getQtdMordidas() {
         return qtdGolpes;
     }
 
+    public int getDano() {
+        return dano;
+    }
+
     @Override
-    public void usarArma()
+    public void usarArma(Personagem personagemAlvo)
     {
         if(qtdGolpes > 0)
         {

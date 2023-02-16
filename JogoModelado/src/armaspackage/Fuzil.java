@@ -1,14 +1,21 @@
 package armaspackage;
 
+import personagenspackage.Personagem;
+
 public class Fuzil extends ArmaDeFogo{
     private int qtdMunicao = 15;
+    private int dano = 7;
 
     public int getQtdBalas() {
         return qtdMunicao;
     }
 
+    public int getDano() {
+        return dano;
+    }
+
     @Override
-    public void usarArma()
+    public void usarArma(Personagem personagemAlvo)
     {
         if(qtdMunicao > 0)
         {

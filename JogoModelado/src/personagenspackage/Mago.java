@@ -1,6 +1,12 @@
 package personagenspackage;
 
 public class Mago extends PersoTerrestres  {
+    private int vida = 30;
+
+    @Override
+    public int getVida() {
+        return vida;
+    }
 
     @Override
     public void desenhar() {
