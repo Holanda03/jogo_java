@@ -30,7 +30,12 @@ public abstract class Personagem {
 
     public abstract void desenhar();
 
-    public void arma(Personagem personagemPredador, Personagem personagemPresa) {
-        arma.usarArma(personagemPredador, personagemPresa);
+    public void arma(Personagem personagemPresa) {
+        arma.usarArma(personagemPresa);
+        System.out.println("");
+        System.out.println("O personagem " + this.getClass() + " atacou o personagem " + personagemPresa.getClass());
+        personagemPresa.setVida(personagemPresa.getVida() - arma.getDano());
+        System.out.println("A vida do personagem " + personagemPresa.getClass() + " agora é " + personagemPresa.getVida());
+        System.out.println("");
     }
 }

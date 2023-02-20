@@ -6,7 +6,7 @@ public class Revolver extends ArmaDeFogo{
     private int qtdMunicao = 5;
     private int dano = 6;
 
-    public int getQtdBalas() {
+    public int getQtdMunicao() {
         return qtdMunicao;
     }
 
@@ -15,7 +15,7 @@ public class Revolver extends ArmaDeFogo{
     }
 
     @Override
-    public void usarArma(Personagem personagemPredador, Personagem personagemPresa)
+    public void usarArma(Personagem personagemPresa)
     {
         if(qtdMunicao > 0)
         {

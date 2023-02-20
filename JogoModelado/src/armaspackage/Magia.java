@@ -15,7 +15,7 @@ public class Magia extends Poderes{
     }
 
     @Override
-    public void usarArma(Personagem personagemPredador, Personagem personagemPresa) {
+    public void usarArma(Personagem personagemPresa) {
         if(qtdMana > 0)
         {
             System.out.println("Utilizando a Magia - Mago.");

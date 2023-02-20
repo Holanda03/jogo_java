@@ -36,13 +36,14 @@ public class Main {
         //dragao.arma();
         //dragao.arma();
         //dragao.arma();
-        soldado.arma(soldado, general);
+        soldado.arma(general);
+        soldado.arma(general);
         System.out.println(mordida.getQtdMordidas());
         mordida.descansar();
         //general.arma();
-        System.out.println(revolver.getQtdBalas());
+        System.out.println(revolver.getQtdMunicao());
         revolver.recarregar();
-        System.out.println(revolver.getQtdBalas());
+        System.out.println(revolver.getQtdMunicao());
         mago.falar("General, você não será palho para mim.");
         soldado.desenhar();
     }

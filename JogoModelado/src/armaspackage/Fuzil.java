@@ -1,12 +1,11 @@
 package armaspackage;
-
 import personagenspackage.Personagem;
 
 public class Fuzil extends ArmaDeFogo{
     private int qtdMunicao = 15;
     private int dano = 7;
 
-    public int getQtdBalas() {
+    public int getQtdMunicao() {
         return qtdMunicao;
     }
 
@@ -15,13 +14,11 @@ public class Fuzil extends ArmaDeFogo{
     }
 
     @Override
-    public void usarArma(Personagem personagemPredador, Personagem personagemPresa)
+    public void usarArma(Personagem personagemPresa)
     {
         if(qtdMunicao > 0)
         {
-            System.out.println("O personagem " + personagemPredador.getNome() + " atacou o personagem " + personagemPresa.getNome());
-            personagemPresa.setVida(personagemPresa.getVida() - this.dano);
-            System.out.println("A vida do personagem " + personagemPresa.getNome() + " agora é " + personagemPresa.getVida());
+
             qtdMunicao = qtdMunicao - 1;
         } else
         {
