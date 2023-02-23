@@ -1,5 +1,4 @@
 package armaspackage;
-
 import personagenspackage.Personagem;
 
 public abstract class Armaif {
