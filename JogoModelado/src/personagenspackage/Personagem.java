@@ -1,10 +1,15 @@
 package personagenspackage;
 import armaspackage.Armaif;
+import armaspackage.Desarmado;
 
 public abstract class Personagem {
-    private String nome;
-    private Armaif arma;
+    protected String nome;
+    protected Armaif arma = new Desarmado();
     protected int vida;
+
+    public Armaif getArma() {
+        return arma;
+    }
 
     public void setArma(Armaif arma) {
         this.arma = arma;
@@ -20,6 +25,10 @@ public abstract class Personagem {
 
     public String getNome() {
         return nome;
+    }
+
+    public String toString(){
+        return nome + " " + arma + " " + getVida();
     }
 
     public abstract void desenhar();

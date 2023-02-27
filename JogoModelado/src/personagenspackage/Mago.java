@@ -3,6 +3,10 @@ package personagenspackage;
 public class Mago extends PersoTerrestres  {
     private int vida = 30;
 
+    public Mago(String nome) {
+        this.nome = nome;
+    }
+
     @Override
     public int getVida() {
         return vida;
@@ -13,12 +17,10 @@ public class Mago extends PersoTerrestres  {
         System.out.println("desenhar(): Mago");
     }
 
-
     @Override
     public void falar(String mensagem) {
         System.out.println("Mensagem do Mago: " + mensagem);
     }
-
 
     @Override
     public void correr() {

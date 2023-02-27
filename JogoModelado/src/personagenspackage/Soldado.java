@@ -3,6 +3,10 @@ package personagenspackage;
 public class Soldado extends PersoTerrestres {
     private int vida = 25;
 
+    public Soldado(String nome) {
+        this.nome = nome;
+    }
+
     @Override
     public int getVida() {
         return vida;
@@ -13,12 +17,10 @@ public class Soldado extends PersoTerrestres {
         System.out.println("desenhar(): Soldado.");
     }
 
-
     @Override
     public void falar(String mensagem) {
         System.out.println("Mensagem do Soldado: " + mensagem);
     }
-
 
     @Override
     public void correr() {

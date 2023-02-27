@@ -3,6 +3,10 @@ package personagenspackage;
 public class General extends PersoTerrestres {
     protected int vida = 35;
 
+    public General(String nome) {
+        this.nome = nome;
+    }
+
     @Override
     public int getVida() {
         return vida;
