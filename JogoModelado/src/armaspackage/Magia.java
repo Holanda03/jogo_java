@@ -1,7 +1,5 @@
 package armaspackage;
 
-import personagenspackage.Personagem;
-
 public class Magia extends Poderes{
     private int qtdMana = 25;
     private int dano = 5;
@@ -12,18 +10,6 @@ public class Magia extends Poderes{
 
     public int getDano() {
         return dano;
-    }
-
-    @Override
-    public void usarArma(Personagem personagemPresa) {
-        if(qtdMana > 0)
-        {
-            System.out.println("Utilizando a Magia - Mago.");
-            qtdMana = qtdMana - 5;
-        } else
-        {
-            System.out.println("Você está sem mana. Regenere ela imediatamente usando regenerar()");
-        }
     }
 
     @Override
