@@ -1,5 +1,4 @@
 package armaspackage;
-
 import personagenspackage.Personagem;
 
 public abstract class ArmaBranca extends Armaif {
@@ -10,7 +9,7 @@ public abstract class ArmaBranca extends Armaif {
         if(qtdGolpes > 0) {
             qtdGolpes = qtdGolpes - 1;
         } else {
-            System.out.println("Você está sem fôlego. Recupere imediatamente usando recuperarFolego()");
+            throw new RuntimeException("Você está sem fôlego. Recupere imediatamente usando recuperarFolego().");
         }
     }
 

@@ -1,5 +1,4 @@
 package armaspackage;
-
 import personagenspackage.Personagem;
 
 public abstract class Poderes extends Armaif {
@@ -10,7 +9,7 @@ public abstract class Poderes extends Armaif {
         if(qtdMana > 0) {
             qtdMana = qtdMana - 5;
         } else {
-            System.out.println("Você está sem poder. Regenere imediatamente usando regenerar()");
+            throw new RuntimeException("Você está sem poder. Regenere imediatamente usando regenerar().");
         }
     }
 

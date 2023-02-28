@@ -1,5 +1,4 @@
 package armaspackage;
-
 import personagenspackage.Personagem;
 
 public abstract class ArmaDeFogo extends Armaif {
@@ -11,7 +10,7 @@ public abstract class ArmaDeFogo extends Armaif {
             qtdMunicao = qtdMunicao - 1;
         }
         else {
-            System.out.println("Você está sem balas. Recarregue imediatamente usando recarregar()");
+            throw new RuntimeException("Você está sem balas. Recarregue imediatamente usando recarregar().");
         }
     }
 
