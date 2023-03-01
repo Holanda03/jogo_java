@@ -15,7 +15,11 @@ public class Revolver extends ArmaDeFogo{
     @Override
     public void recarregar()
     {
-        qtdMunicao = 5;
-        System.out.println("Revólver recarregado.");
+        if(qtdMunicao == 5){
+            throw new RuntimeException("Você já está com a capacidade máxima de balas do revólver.");
+        } else{
+            qtdMunicao = 5;
+            System.out.println("Revólver recarregado.");
+        }
     }
 }

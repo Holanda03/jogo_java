@@ -15,7 +15,11 @@ public class Mordida extends ForcaBruta {
     @Override
     public void descansar()
     {
-        qtdGolpes = 3;
-        System.out.println("Mandibula descansada. Pode voltar a morder seus inimigos agora.");
+        if(qtdGolpes == 3){
+            throw new RuntimeException("Você já está com a capacidade máxima de mordidas.");
+        } else{
+            qtdGolpes = 3;
+            System.out.println("Mordida descansada.");
+        }
     }
 }

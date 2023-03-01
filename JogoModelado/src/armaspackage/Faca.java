@@ -15,7 +15,11 @@ public class Faca extends ArmaBranca{
 
     @Override
     public void recuperarFolego(){
-        qtdGolpes = 3;
-        System.out.println("Fôlego recuperado.");
+        if(qtdGolpes == 3){
+            throw new RuntimeException("Você já está com a capacidade máxima de golpes de faca.");
+        } else{
+            qtdGolpes = 3;
+            System.out.println("Fôlego recuperado.");
+        }
     }
 }

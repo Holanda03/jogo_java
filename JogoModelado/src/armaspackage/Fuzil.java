@@ -14,7 +14,11 @@ public class Fuzil extends ArmaDeFogo{
 
     @Override
     public void recarregar() {
-        qtdMunicao = 15;
-        System.out.println("Fuzil recarregado.");
+        if(qtdMunicao == 15){
+            throw new RuntimeException("Você já está com a capacidade máxima de balas do fuzil.");
+        } else{
+            qtdMunicao = 15;
+            System.out.println("Fuzil recarregado.");
+        }
     }
 }

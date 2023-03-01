@@ -15,7 +15,11 @@ public class Magia extends Poderes{
     @Override
     public void recuperarPoder()
     {
-        qtdMana = 25;
-        System.out.println("Mana restaurada.");
+        if(qtdMana == 25){
+            throw new RuntimeException("Você já está com a quantidade máxima de mana.");
+        } else{
+            qtdMana = 25;
+            System.out.println("Mana regenerada.");
+        }
     }
 }
